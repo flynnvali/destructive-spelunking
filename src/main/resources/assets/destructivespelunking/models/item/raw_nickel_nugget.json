@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "destructivespelunking:item/raw_nickel_nugget"
+  }
+}

@@ -1,6 +1,9 @@
 package net.flynnvali.destructivespelunking;
 
 import com.mojang.logging.LogUtils;
+import net.flynnvali.destructivespelunking.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,16 +19,16 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DestructiveSpelunking.MOD_ID)
-public class DestructiveSpelunking
-{
+public class DestructiveSpelunking {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "destructivespelunking";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public DestructiveSpelunking(FMLJavaModLoadingContext context)
-    {
+    public DestructiveSpelunking(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -47,9 +50,10 @@ public class DestructiveSpelunking
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
-
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.RAW_NICKEL_NUGGET);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
