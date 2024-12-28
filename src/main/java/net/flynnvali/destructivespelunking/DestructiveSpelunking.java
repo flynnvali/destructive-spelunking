@@ -53,6 +53,9 @@ public class DestructiveSpelunking {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RAW_NICKEL_NUGGET);
+            event.accept(ModItems.NICKEL_NUGGET);
+            event.accept(ModItems.FLUORITE_SHARD);
+
         }
     }
 

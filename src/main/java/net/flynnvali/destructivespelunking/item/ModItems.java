@@ -12,6 +12,10 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, DestructiveSpelunking.MOD_ID);
     public static final RegistryObject<Item> RAW_NICKEL_NUGGET = ITEMS.register("raw_nickel_nugget",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FLUORITE_SHARD = ITEMS.register("fluorite_shard",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
