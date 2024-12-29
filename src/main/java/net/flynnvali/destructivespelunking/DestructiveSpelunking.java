@@ -6,11 +6,16 @@ import com.petrolpark.destroy.chemistry.legacy.index.DestroyGroupFinder;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyMolecules;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyReactions;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyTopologies;
+import com.petrolpark.destroy.chemistry.legacy.index.*;
+import com.petrolpark.destroy.chemistry.legacy.LegacyElement;
+import com.petrolpark.destroy.chemistry.legacy.LegacyMolecularStructure;
+import com.petrolpark.destroy.chemistry.legacy.LegacySpecies;
+import com.petrolpark.destroy.chemistry.legacy.LegacySpeciesTag;
 
 import com.mojang.logging.LogUtils;
-import com.petrolpark.destroy.chemistry.legacy.index.*;
 import net.flynnvali.destructivespelunking.chemistry.legacy.index.DestructiveSpelunkingReactions;
 import net.flynnvali.destructivespelunking.item.ModItems;
+import net.flynnvali.registrate.DestructiveSpelunkingRegistrate;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +39,8 @@ public class DestructiveSpelunking {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
+
+
     public DestructiveSpelunking(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
@@ -49,6 +56,7 @@ public class DestructiveSpelunking {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+        REGISTRATE.registerEventListeners(modEventBus);
 
 
     }
@@ -77,6 +85,7 @@ public class DestructiveSpelunking {
 
         }
     }
+    public static final DestructiveSpelunkingRegistrate REGISTRATE = new DestructiveSpelunkingRegistrate(MOD_ID);
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

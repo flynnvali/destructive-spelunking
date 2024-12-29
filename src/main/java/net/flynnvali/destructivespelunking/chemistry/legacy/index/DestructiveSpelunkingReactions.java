@@ -15,6 +15,7 @@ import com.petrolpark.destroy.item.DestroyItems;
 import com.petrolpark.destroy.config.DestroySubstancesConfigs;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllTags;
+
 // import com.petrolpark.destroy.chemistry.legacy.index.DestroyReactions;
 
 import net.minecraft.world.item.Items;
@@ -29,12 +30,11 @@ public class DestructiveSpelunkingReactions extends DestroyReactions {
             .addProduct(DestroyMolecules.POTASSIUM_ION, 5)
             .addProduct(DestroyMolecules.NITRATE, 5)
             .build();
-    static{};
 
 
 
-    private static ReactionBuilder builder() {
-        return new ReactionBuilder(Destroy.MOD_ID);
+    private static LegacyReaction.ReactionBuilder builder() {
+        return new LegacyReaction.ReactionBuilder(DestructiveSpelunking.MOD_ID);
     };
 
     public static void register() {};
