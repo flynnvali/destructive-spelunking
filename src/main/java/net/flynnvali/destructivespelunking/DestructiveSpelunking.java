@@ -9,6 +9,7 @@ import com.petrolpark.destroy.chemistry.legacy.index.DestroyTopologies;
 
 import com.mojang.logging.LogUtils;
 import com.petrolpark.destroy.chemistry.legacy.index.*;
+import net.flynnvali.destructivespelunking.chemistry.legacy.index.DestructiveSpelunkingReactions;
 import net.flynnvali.destructivespelunking.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -56,6 +57,16 @@ public class DestructiveSpelunking {
     {
 
     }
+    public static void init(final FMLCommonSetupEvent event) {
+        DestroyGroupFinder.register();
+        DestroyTopologies.register();
+        DestroyMolecules.register();
+        DestroyReactions.register();
+        DestructiveSpelunkingReactions.register();
+        DestroyGenericReactions.register();
+
+
+    }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -85,13 +96,5 @@ public class DestructiveSpelunking {
         }
     }
 
-    public static void init(final FMLCommonSetupEvent event) {
-        DestroyGroupFinder.register();
-        DestroyTopologies.register();
-        DestroyMolecules.register();
-        DestroyReactions.register();
-        DestroyGenericReactions.register();
 
-
-    }
 }
