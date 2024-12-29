@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "destructivespelunking:raw_nickel_nugget"
+  },
+  "result": "destructivespelunking:nickel_nugget",
+  "experience": 0.1,
+  "cookingtime": 23
+}

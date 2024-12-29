@@ -1,6 +1,14 @@
 package net.flynnvali.destructivespelunking;
+import com.petrolpark.destroy.chemistry.api.Chemistry;
+import com.petrolpark.destroy.chemistry.forge.event.ForgeChemistryEventFirer;
+import com.petrolpark.destroy.chemistry.legacy.index.DestroyGenericReactions;
+import com.petrolpark.destroy.chemistry.legacy.index.DestroyGroupFinder;
+import com.petrolpark.destroy.chemistry.legacy.index.DestroyMolecules;
+import com.petrolpark.destroy.chemistry.legacy.index.DestroyReactions;
+import com.petrolpark.destroy.chemistry.legacy.index.DestroyTopologies;
 
 import com.mojang.logging.LogUtils;
+import com.petrolpark.destroy.chemistry.legacy.index.*;
 import net.flynnvali.destructivespelunking.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -75,5 +83,15 @@ public class DestructiveSpelunking {
         {
 
         }
+    }
+
+    public static void init(final FMLCommonSetupEvent event) {
+        DestroyGroupFinder.register();
+        DestroyTopologies.register();
+        DestroyMolecules.register();
+        DestroyReactions.register();
+        DestroyGenericReactions.register();
+
+
     }
 }

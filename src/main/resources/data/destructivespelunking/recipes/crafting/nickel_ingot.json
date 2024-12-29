@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+
+
+    "W": {
+      "item": "destructivespelunking:nickel_nugget"
+    }
+
+  },
+  "result": {
+    "item": "destroy:nickel_ingot",
+    "count": 1
+
+
+  }
+}
