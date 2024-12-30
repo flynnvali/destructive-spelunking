@@ -2,6 +2,15 @@
   "item.destructivespelunking.raw_nickel_nugget": "Raw Nickel Nugget",
   "item.destructivespelunking.nickel_nugget": "Nickel Nugget",
   "item.destructivespelunking.fluorite_shard": "Fluorite Shard",
+  "block.destructivespelunking.andesite_fluorite_ore": "Andesite Fluorite Ore",
+  "block.destructivespelunking.diorite_fluorite_ore": "Diorite Fluorite Ore",
+  "block.destructivespelunking.granite_fluorite_ore": "Granite Fluorite Ore",
+  "block.destructivespelunking.tuff_fluorite_ore": "Tuff Fluorite Ore",
+  "block.destructivespelunking.andesite_nickel_ore": "Andesite Nickel Ore",
+  "block.destructivespelunking.diorite_nickel_ore": "Diorite Nickel Ore",
+  "block.destructivespelunking.granite_nickel_ore": "Granite Nickel Ore",
+  "block.destructivespelunking.tuff_nickel_ore": "Tuff Nickel Ore",
+
   "destructivespelunking.reaction.saltpeter_dissolution": "Saltpeter Dissolution",
   "destructivespelunking.reaction.saltpeter_dissolution": "The dissolution of saltpeter in water"
 }

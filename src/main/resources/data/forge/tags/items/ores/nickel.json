@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "destructivespelunking:andesite_nickel_ore",
+    "destructivespelunking:diorite_nickel_ore",
+    "destructivespelunking:granite_nickel_ore",
+    "destructivespelunking:tuff_nickel_ore"
+  ]
+}

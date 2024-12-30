@@ -1,22 +1,15 @@
 package net.flynnvali.destructivespelunking;
-import com.petrolpark.destroy.chemistry.api.Chemistry;
-import com.petrolpark.destroy.chemistry.forge.event.ForgeChemistryEventFirer;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyGenericReactions;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyGroupFinder;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyMolecules;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyReactions;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyTopologies;
-import com.petrolpark.destroy.chemistry.legacy.index.*;
-import com.petrolpark.destroy.chemistry.legacy.LegacyElement;
-import com.petrolpark.destroy.chemistry.legacy.LegacyMolecularStructure;
-import com.petrolpark.destroy.chemistry.legacy.LegacySpecies;
-import com.petrolpark.destroy.chemistry.legacy.LegacySpeciesTag;
 
 import com.mojang.logging.LogUtils;
+import net.flynnvali.destructivespelunking.block.DSBLocks;
 import net.flynnvali.destructivespelunking.chemistry.legacy.index.DestructiveSpelunkingReactions;
 import net.flynnvali.destructivespelunking.item.ModItems;
 import net.flynnvali.registrate.DestructiveSpelunkingRegistrate;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,7 +18,6 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -45,6 +37,9 @@ public class DestructiveSpelunking {
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        DSBLocks.register(modEventBus);
+
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -82,6 +77,19 @@ public class DestructiveSpelunking {
             event.accept(ModItems.RAW_NICKEL_NUGGET);
             event.accept(ModItems.NICKEL_NUGGET);
             event.accept(ModItems.FLUORITE_SHARD);
+
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(DSBLocks.ANDESITE_FLUORITE_ORE);
+            event.accept(DSBLocks.DIORITE_FLUORITE_ORE);
+            event.accept(DSBLocks.GRANITE_FLUORITE_ORE);
+            event.accept(DSBLocks.TUFF_FLUORITE_ORE);
+            event.accept(DSBLocks.ANDESITE_NICKEL_ORE);
+            event.accept(DSBLocks.DIORITE_NICKEL_ORE);
+            event.accept(DSBLocks.GRANITE_NICKEL_ORE);
+            event.accept(DSBLocks.TUFF_NICKEL_ORE);
+
 
         }
     }

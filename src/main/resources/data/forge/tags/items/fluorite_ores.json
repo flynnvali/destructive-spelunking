@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "destructivespelunking:andesite_fluorite_ore",
+    "destructivespelunking:diorite_fluorite_ore",
+    "destructivespelunking:granite_fluorite_ore",
+    "destructivespelunking:tuff_fluorite_ore"
+  ]
+}

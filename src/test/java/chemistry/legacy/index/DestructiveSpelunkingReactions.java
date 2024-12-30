@@ -1,4 +1,4 @@
-package net.flynnvali.destructivespelunking.chemistry.legacy.index;
+package chemistry.legacy.index;
 import net.flynnvali.destructivespelunking.DestructiveSpelunking;
 
 import com.petrolpark.destroy.Destroy;
