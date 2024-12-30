@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "spelunkery:portal_fluid_bottle"
   },
-  "result": "destroy:bottle_of_tears",
+  "result": "destroy:tear_bottle",
   "experience": 0.1,
   "cookingtime": 23
 }

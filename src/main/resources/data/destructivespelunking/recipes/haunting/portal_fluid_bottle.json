@@ -2,7 +2,7 @@
     "type": "create:haunting",
     "ingredients": [
       {
-        "item": "destroy:bottle_of_tears"
+        "item": "destroy:tear_bottle"
       }
     ],
     "results": [

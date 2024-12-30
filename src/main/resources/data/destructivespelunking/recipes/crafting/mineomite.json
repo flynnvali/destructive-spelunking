@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glowsticks",
+  "pattern": [
+    "#C#",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "X": {
+      "tag": "destroy:explosives/secondary"
+    },
+    "C": {
+      "tag": "destroy:explosives/primary"
+    }
+  },
+  "result": {
+    "item": "spelunkery:mineomite",
+    "count": 16
+  }
+}
