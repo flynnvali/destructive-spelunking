@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "spelunkery:portal_fluid_bottle"
+  },
+  "result": "destroy:bottle_of_tears",
+  "experience": 0.1,
+  "cookingtime": 23
+}

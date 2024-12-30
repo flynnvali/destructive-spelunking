@@ -1,0 +1,38 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "fluid": "minecraft:water",
+        "amount": 50
+      },
+      {
+       "tag": "forge:salt"
+      }
+    ],
+    "results": [
+      {
+        "fluid": "destroy:mixture",
+        "amount": 50,
+        "nbt": {
+          "Mixture": {
+            "TranslationKey": "fluid.destroy.brine",
+            "Temperature": 289,
+            "Contents": [
+              {
+                "Molecule": "destroy:water",
+                "Concentration": 55.6
+              },
+              {
+                "Molecule": "destroy:sodium_ion",
+                "Concentration": 1.0
+              },
+              {
+                "Molecule": "destroy:chloride",
+                "Concentration": 1.0
+              }
+            ]
+          }
+        }
+        }
+    ]
+}

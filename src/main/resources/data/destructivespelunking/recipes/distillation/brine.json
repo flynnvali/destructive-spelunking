@@ -1,0 +1,36 @@
+{
+    "type": "destroy:distillation",
+    "ingredients": [
+        {
+            "fluid": "spelunkery:portal_fluid",
+            "amount": 250
+        }
+    ],
+    "results": [
+        {
+            "fluid": "destroy:mixture",
+            "amount": 250,
+            "nbt": {
+                "Mixture": {
+                    "TranslationKey": "fluid.destroy.brine",
+                    "Temperature": 289,
+                    "Contents": [
+                        {
+                            "Molecule": "destroy:water",
+                            "Concentration": 55.6
+                        },
+                        {
+                            "Molecule": "destroy:sodium_ion",
+                            "Concentration": 1.0
+                        },
+                        {
+                            "Molecule": "destroy:chloride",
+                            "Concentration": 1.0
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "heatRequirement": "heated"
+}

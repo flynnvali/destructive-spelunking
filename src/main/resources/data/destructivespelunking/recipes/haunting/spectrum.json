@@ -1,0 +1,13 @@
+{
+    "type": "create:haunting",
+    "ingredients": [
+      {
+        "item": "destroy:bottle_of_tears"
+      }
+    ],
+    "results": [
+      {
+        "item": "spelunkery:portal_fluid_bottle"
+      }
+    ]
+  }

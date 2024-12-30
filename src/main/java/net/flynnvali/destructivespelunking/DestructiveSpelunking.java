@@ -7,9 +7,7 @@ import com.petrolpark.destroy.chemistry.legacy.index.DestroyTopologies;
 
 import com.mojang.logging.LogUtils;
 import net.flynnvali.destructivespelunking.block.DSBLocks;
-import net.flynnvali.destructivespelunking.chemistry.legacy.index.DestructiveSpelunkingReactions;
 import net.flynnvali.destructivespelunking.item.ModItems;
-import net.flynnvali.registrate.DestructiveSpelunkingRegistrate;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -51,7 +49,6 @@ public class DestructiveSpelunking {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-        REGISTRATE.registerEventListeners(modEventBus);
 
 
     }
@@ -65,7 +62,6 @@ public class DestructiveSpelunking {
         DestroyTopologies.register();
         DestroyMolecules.register();
         DestroyReactions.register();
-        DestructiveSpelunkingReactions.register();
         DestroyGenericReactions.register();
 
 
@@ -93,7 +89,6 @@ public class DestructiveSpelunking {
 
         }
     }
-    public static final DestructiveSpelunkingRegistrate REGISTRATE = new DestructiveSpelunkingRegistrate(MOD_ID);
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
