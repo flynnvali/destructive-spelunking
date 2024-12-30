@@ -1,0 +1,18 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    {
+      "tag": "minecraft:bottle"
+    }
+  ],
+  "results": [
+    {
+      "item": "spelunkery:portal_fluid_bottle",
+      "item": "minecraft:bottle"
+
+    }
+  ]
+}
