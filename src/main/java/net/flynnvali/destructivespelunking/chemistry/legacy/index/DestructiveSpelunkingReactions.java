@@ -16,7 +16,6 @@ import com.petrolpark.destroy.config.DestroySubstancesConfigs;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllTags;
 
-// import com.petrolpark.destroy.chemistry.legacy.index.DestroyReactions;
 
 import net.minecraft.world.item.Items;
 
@@ -26,7 +25,7 @@ public class DestructiveSpelunkingReactions extends DestroyReactions {
             SALTPETER_DISSOLUTION = builder()
             .id("saltpeter_dissolution")
             .addSimpleItemTagReactant(AllTags.forgeItemTag("dusts/saltpeter"), 3f)
-            .addCatalyst(DestroyMolecules.WATER, 0)
+            .addCatalyst(DestroyMolecules.WATER, 1)
             .addProduct(DestroyMolecules.POTASSIUM_ION, 5)
             .addProduct(DestroyMolecules.NITRATE, 5)
             .build();
