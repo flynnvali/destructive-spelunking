@@ -25,7 +25,7 @@ displayName="Destructive Spelunking" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+logoFile="logo.png"
 # A text field displayed in the mod UI
 #credits="" #optional
 # A text field displayed in the mod UI
@@ -47,7 +47,7 @@ description='''spelunkery + destroy compat'''
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="${forge_version_range}" #mandatory
+    versionRange="(43.3.22, ]" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the dependency is not mandatory
     # BEFORE - This mod is loaded BEFORE the dependency
     # AFTER - This mod is loaded AFTER the dependency
@@ -66,14 +66,14 @@ description='''spelunkery + destroy compat'''
     modId="destroy"
     mandatory=true
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="0.1.1"
+    versionRange="(0.1.1, ]"
     ordering="AFTER"
     side="BOTH"
 [[dependencies.destructivespelunking]]
     modId="spelunkery"
     mandatory=true
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="0.3.15"
+    versionRange="(0.3.15, ]"
     ordering="AFTER"
     side="BOTH"
 
