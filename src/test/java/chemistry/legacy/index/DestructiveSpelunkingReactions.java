@@ -2,8 +2,7 @@ package chemistry.legacy.index;
 import net.flynnvali.destructivespelunking.DestructiveSpelunking;
 
 import com.petrolpark.destroy.Destroy;
-import com.petrolpark.destroy.advancement.DestroyAdvancementTrigger;
-import com.petrolpark.destroy.block.DestroyBlocks;
+
 import com.petrolpark.destroy.chemistry.legacy.LegacyReaction;
 import com.petrolpark.destroy.chemistry.legacy.LegacyReaction.ReactionBuilder;
 import com.petrolpark.destroy.chemistry.legacy.index.DestroyMolecules;
@@ -11,7 +10,6 @@ import com.petrolpark.destroy.chemistry.legacy.index.DestroyReactions;
 import com.petrolpark.destroy.chemistry.legacy.reactionresult.CombinedReactionResult;
 import com.petrolpark.destroy.chemistry.legacy.reactionresult.ExplosionReactionResult;
 import com.petrolpark.destroy.chemistry.legacy.reactionresult.PrecipitateReactionResult;
-import com.petrolpark.destroy.item.DestroyItems;
 import com.petrolpark.destroy.config.DestroySubstancesConfigs;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllTags;

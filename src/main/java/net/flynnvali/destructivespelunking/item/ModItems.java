@@ -1,5 +1,4 @@
 package net.flynnvali.destructivespelunking.item;
-import static com.simibubi.create.AllTags.forgeItemTag;
 
 import net.flynnvali.destructivespelunking.DestructiveSpelunking;
 import net.minecraft.world.item.Item;
